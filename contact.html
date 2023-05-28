@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css">
+    </head>
+
+    <body>
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="img/anonym2.png" />
+                    </a>
+                </li>
+                <li class="item-collapse">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="item-collapse">
+                    <a href="myProject.html">My Project</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right item-collapse">
+            <a href="contact.html">Contact Me</a>
+        </div>
+        <button type="button" class="barsmenu" onclick="openHam()">
+            <i class="ri-menu-5-line ri-2x"></i>
+        </button>
+    </nav>
+    
+    <div class="hamburger-container" id="hamburger-container">
+        <a href="index.html" class="hamburger-active">Home</a>
+        <a href="myProject.html">My Project</a>
+        <div class="hamburger-contact">
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </div>
+    
+    <div class="contactform">
+        <h1 class="title">HIT ME UP</h1>
+        <form>
+            <div>
+                <label for="Name-input">Name</label>
+                <input id="Name-input" type="text" required placeholder="Enter Your Name">
+            </div>
+            <div>
+                <label for="Email-input">Email</label>
+                <input id="Email-input" type="email" name="email" required placeholder="Enter Your Email">
+            </div>
+            <div>
+                <label for="Phone-input">Phone Number</label>
+                <input id="Phone-input" type="number" required placeholder="Enter Your Phone Number">
+            </div>
+            <div>
+                <label for="subject-input">Subject</label>
+                <select id="subject-input" required>
+                    <option value="" hidden >Select</option>
+                    <option>Cyber Security</option>
+                    <option>Web Development</option>
+                    <option>Consultant</option> 
+                </select>
+            </div>
+            <div>
+                <label for="input-message">Your Messages</label>
+                <textarea id="input-message" rows="5" cols="10" required minlength="20" placeholder="Enter Your Messages"></textarea>
+            </div>
+        </form>
+            <button class="button-submit" onclick="submitData()">Submit</button>
+    </div>
+    <script src="contact.js"></script>
+    <script src="index.js"></script> 
+
+    </body>
+</html>

@@ -1,0 +1,243 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Project</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="myProject.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <img src="img/anonym2.png" />
+                    </li>
+                    <li class="item-collapse">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="item-collapse">
+                        <a class="active" href="myProject.html">My Project</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right item-collapse">
+                <a href="contact.html">Contact me</a>
+            </div>
+            <button type="button" class="barsmenu" onclick="openHam()">
+                <i class="ri-menu-5-line ri-2x"></i>
+            </button>
+        </nav>
+        
+        <div class="hamburger-container" id="hamburger-container">
+            <a href="index.html">Home</a>
+            <a href="#" class="hamburger-active">My Project</a>
+            <div class="hamburger-contact">
+                <a href="contact.html">Contact me</a>
+            </div>
+        </div>
+
+        <div class="projectform">
+            <h1>ADD MY PROJECT</h1>
+            <form action="" onsubmit="addProject(event)">
+                <div>
+                    <label for="inputProject">Project Name</label>
+                    <input id="inputProject" type="text" placeholder="Enter Your Project Name" required>
+                </div>
+                <div class="dateForm">
+                    <div class="dateInput1">
+                        <label for="date1">Start Date</label>
+                        <input type="date" id="startdate">
+                    </div>
+                    <div class="dateInput2">
+                        <label for="date2">End Date</label>
+                        <input type="date" id="enddate">
+                    </div>
+                </div>
+                <div>
+                    <label for="desc">Description</label>
+                    <textarea name="desc" id="desc" cols="10" rows="5" placeholder="Describe Your Project" required></textarea>
+                </div>
+
+                <div>
+                    <label>Technologies</label>
+                    <div>
+                        <div class="checkboxForm">
+                            <input type="checkbox" id="javaScript" value="javaScript">
+                            <label for="javaScript">JavaScript</label>
+                            <input type="checkbox" id="python" value="python">
+                            <label for="python">Python</label>
+                        </div>
+                        <div class="checkboxForm">
+                            <input type="checkbox" id="linux" value="linux">
+                            <label for="linux">Pentest Tools</label>
+                            <input type="checkbox" id="java" value="java">
+                            <label for="java">Java</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label>Upload Image</label>
+                    <div class="inputBlogImageGroup">
+                        <label for="inputImg">
+                            <!-- <div class="attachImg" id="attachImg">
+                                <div>
+                                    <p style="cursor: pointer;">Choose</p>
+                                </div>
+                                <img src="img/file(1).png" style="cursor: pointer;">
+                            </div> -->
+                        </label>
+                    </div>
+                    <input type="file" id="inputImg" required>
+                </div>
+                <button type="submit" class="button-submit" onclick="formAlert()">Submit</button>
+            </form>
+        </div>
+
+        <div class="container-blog">
+            <h1>MY PROJECT</h1>
+            <div class="container-grid" id="contents">
+                <div class="item-grid">
+                    <img src="img/nahloh.jpeg">
+                    <a href="detailProject.html">
+                    <h3>Cyber Security</h3>
+                    </a>
+                    <h5>Duration: 1 Month(s)</h5>
+                    <p>Cyber Security </p>
+                    <div class="previewTech">
+                        <a href="https://www.javascript.com/" target="_blank">
+                            <i class="fa-brands fa-js"></i>
+                        </a>
+
+                        <a href="https://www.python.org/" target="_blank">
+                        <i class="fa-brands fa-python"></i>
+                        </a>
+
+                        <a href="https://www.kali.org/" target="_blank">
+                        <i class="fa-brands fa-linux"></i>
+                        </a>
+                    </div>
+                    <div class="itemBtn">
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </div>
+                </div>
+
+                <div class="item-grid">
+                    <img src="img/cyber-sec.jpg">
+                    <a href="detailProject.html">
+                    <h3>Cyber Security</h3>
+                    </a>
+                    <h5>Duration: 2 Month(s)</h5>
+                    <p>Cyber Security </p>
+                    <div class="previewTech">
+                        <a href="https://www.javascript.com/" target="_blank">
+                            <i class="fa-brands fa-js"></i>
+                        </a>
+
+                        <a href="https://www.python.org/" target="_blank">
+                        <i class="fa-brands fa-python"></i>
+                        </a>
+
+                        <a href="https://www.kali.org/" target="_blank">
+                        <i class="fa-brands fa-linux"></i>
+                        </a>
+                    </div>
+                    <div class="itemBtn">
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </div>
+                </div>
+
+                <div class="item-grid">
+                    <img src="img/cyber-sec.jpg">
+                    <a href="detailProject.html">
+                    <h3>Cyber Security</h3>
+                    </a>
+                    <h5>Duration: 3 Month(s)</h5>
+                    <p>Cyber Security </p>
+                    <div class="previewTech">
+                        <a href="https://www.javascript.com/" target="_blank">
+                            <i class="fa-brands fa-js"></i>
+                        </a>
+
+                        <a href="https://www.python.org/" target="_blank">
+                        <i class="fa-brands fa-python"></i>
+                        </a>
+
+                        <a href="https://www.kali.org/" target="_blank">
+                        <i class="fa-brands fa-linux"></i>
+                        </a>
+                    </div>
+                    <div class="itemBtn">
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </div>
+                </div>
+
+                <div class="item-grid">
+                    <img src="img/cyber-sec.jpg">
+                    <a href="detailProject.html">
+                    <h3>Cyber Security</h3>
+                    </a>
+                    <h5>Duration: 4 Month(s)</h5>
+                    <p>Cyber Security</p>
+                    <div class="previewTech">
+                        <a href="https://www.javascript.com/" target="_blank">
+                            <i class="fa-brands fa-js"></i>
+                        </a>
+
+                        <a href="https://www.python.org/" target="_blank">
+                        <i class="fa-brands fa-python"></i>
+                        </a>
+
+                        <a href="https://www.kali.org/" target="_blank">
+                        <i class="fa-brands fa-linux"></i>
+                        </a>
+                    </div>
+                    <div class="itemBtn">
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </div>
+                </div>
+
+                <div class="item-grid">
+                    <img src="img/cyber-sec.jpg">
+                    <a href="detailProject.html">
+                    <h3>Cyber Security</h3>
+                    </a>
+                    <h5>Duration: 5 Month(s)</h5>
+                    <p>Cyber Security </p>
+                    <div class="previewTech">
+                        <a href="https://www.javascript.com/" target="_blank">
+                            <i class="fa-brands fa-js"></i>
+                        </a>
+
+                        <a href="https://www.python.org/" target="_blank">
+                        <i class="fa-brands fa-python"></i>
+                        </a>
+
+                        <a href="https://www.kali.org/" target="_blank">
+                        <i class="fa-brands fa-linux"></i>
+                        </a>
+                    </div>
+                    <div class="itemBtn">
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="myProject.js"></script>
+        <script src="index.js"></script>
+
+    </body>
+</html>

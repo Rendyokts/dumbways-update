@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Personal Web</title>
+        <link rel="stylesheet" href="style.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css">       
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="img/anonym2.png" />
+                        </a>
+                    </li>
+                    <li class="item-collapse" >
+                        <a class="active" href="index.html">Home</a>
+                    </li>
+                    <li class="item-collapse" style="font-size: 18px;" id="myproject">
+                        <a href="myProject.html">My Project</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right item-collapse">
+                <a href="contact.html">Contact Me</a>
+            </div>
+            <button type="button" class="barsmenu" onclick="openHam()">
+                <i class="ri-menu-5-line ri-2x"></i>
+            </button>
+        </nav>
+
+        <div class="hamburger-container" id="hamburger-container">
+            <a href="index.html" class="hamburger-active">Home</a> 
+            <a href="myProject.html">My Project</a>
+            <div class="hamburger-contact">
+            <a href="contact.html">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <section class="indexSection">
+                <div class="container-left">
+                            <h1>Hi Welcome to My Hut</h1>
+                            <p>Saya adalah seseorang yang memiliki minat dan kemampuan di bidang keamanan cyber, 
+                                atau yang dikenal juga sebagai cyber security. Dalam dunia digital yang terus berkembang pesat,
+                                saya telah mengembangkan ketertarikan yang kuat terhadap perlindungan data dan sistem dari serangan cyber.
+                                Minat saya terhadap cyber security bermula dari kesadaran akan pentingnya keamanan dalam era teknologi informasi saat ini. 
+                                Saya tertarik untuk memahami ancaman cyber yang ada, mulai dari serangan malware, 
+                                hacking, serangan DDoS, hingga pencurian data pribadi. 
+                                Saya selalu ingin tahu bagaimana cara melindungi diri dan orang lain dari ancaman ini.</p>
+                                
+                                <div class="contact">
+                                    <div class="contact2">
+                                        <a href="contact.html">
+                                            <button class="contact-button">Contact</button>
+                                        </a>
+                                    </div>
+
+                                    <div class="contact2">
+                                        <a href="https://drive.google.com/file/d/1OsIDREDsPhQpMf2dFSJTZq-SzkVInuPp/view?usp=sharing" target="_blank">
+                                            <h2>Download CV 
+                                                <i class="fa-solid fa-file-arrow-down"></i>
+                                            </h2>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+
+                    <div class="sosmed">
+                        <a href="https://www.linkedin.com/in/rendi-oktavian-1a585b120/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.twitter.com/met4sploitable" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/kwarez" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-right">
+
+                    <div class="card">
+                        <img src="img/foto-rendi-png.png">
+                        <h2>Rendi Oktavian</h2>
+                        <p>Fullstuck Developer</p>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <script src="index.js"></script> 
+
+    </body> 
+</html>
