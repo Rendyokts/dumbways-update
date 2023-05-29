@@ -3,7 +3,7 @@ function formAlert() {
     let startdate = document.getElementById("startdate").value;
     let enddate = document.getElementById("enddate").value;
     let desc = document.getElementById("desc").value;
-    let image = document.getElementById("attachImg").files;
+    let image = document.getElementById("inputImg").files;
 
     if (projectName == "") {
         return alert("Please input project name");
@@ -13,7 +13,7 @@ function formAlert() {
         return alert("Please input end date");
     } else if (desc == "") {
         return alert("Please describe the project details");
-    } else if (image == ""){
+    } else if (image == "") {
         return alert("Please attach an image project");
     } 
 };
@@ -24,7 +24,7 @@ function addProject(event) {
         event.preventDefault();
         let projectName = document.getElementById("inputProject").value;
         let desc = document.getElementById("desc").value;
-        let image = document.getElementById("attachImg").files;
+        let images = document.getElementById("inputImg").files;
         
         function timeDistance() {
             let startdate = new Date(document.getElementById("startdate").value);
@@ -52,7 +52,7 @@ function addProject(event) {
             } else if (days > 0) { 
                 return `${days} days`
             }
-        }
+        };
 
         let difference = timeDistance()
 
@@ -66,8 +66,8 @@ function addProject(event) {
         let linuxDet = document.getElementById("linux").checked ? linuxIcon : "";
         let javaDet = document.getElementById("java").checked ? javaIcon : ""; 
 
-        image = URL.createObjectURL(image[0]);
-        console.log(image);
+        images = URL.createObjectURL(images[0]);
+        console.log(images);
 
         let projectPreview = { 
             projectName,
@@ -77,11 +77,11 @@ function addProject(event) {
             pythonDet,
             linuxDet,
             javaDet,
-            image,
+            images,
         };
 
         dataProject.push(projectPreview);
-        pushProject()
+        pushProject();
     
 }
 
@@ -110,5 +110,5 @@ function pushProject() {
                 </div>
         </div>
         `
-    }
-}
+    };
+};
