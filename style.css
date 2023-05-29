@@ -245,6 +245,14 @@ a {
         padding: 1em 1em;
     }
 
+    .contact{
+        margin: 30px 30px;
+        display: flex;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+
     .container-left {
         width: 100%;
         flex: 1;
