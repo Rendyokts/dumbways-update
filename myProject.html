@@ -1,9 +1,10 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>My Project</title>
+        <title>RENDY OKTAVIAN</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="myProject.css">
+        <link rel="icon" href="img/anonym2.png">
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -17,18 +18,23 @@
             <div class="nav-left">
                 <ul>
                     <li>
-                        <img src="img/anonym2.png" />
+                        <a href="index.html">
+                            <img src="img/anonym2.png" />
+                        </a>
                     </li>
                     <li class="item-collapse">
-                        <a href="index.html">Home</a>
+                        <a href="index.html">HOME</a>
                     </li>
                     <li class="item-collapse">
-                        <a class="active" href="myProject.html">My Project</a>
+                        <a class="active" href="myProject.html">PROJECT</a>
+                    </li>
+                    <li class="item-collapse">
+                        <a href="testimonials.html">TESTIMONI</a>
                     </li>
                 </ul>
             </div>
             <div class="nav-right item-collapse">
-                <a href="contact.html">Contact me</a>
+                <a href="contact.html">CONTACT ME</a>
             </div>
             <button type="button" class="barsmenu" onclick="openHam()">
                 <i class="ri-menu-5-line ri-2x"></i>
@@ -36,15 +42,16 @@
         </nav>
         
         <div class="hamburger-container" id="hamburger-container">
-            <a href="index.html">Home</a>
-            <a href="myProject.html" class="hamburger-active">My Project</a>
+            <a href="index.html">HOME</a>
+            <a href="myProject.html" class="hamburger-active">PROJECT</a>
+            <a href="testimonials.html">TESTIMONI</a>
             <div class="hamburger-contact">
-                <a href="contact.html">Contact me</a>
+                <a href="contact.html">CONTACT ME</a>
             </div>
         </div>
 
         <div class="projectform">
-            <h1>ADD MY PROJECT</h1>
+            <h1>ADD A PROJECT</h1>
             <form action="" onsubmit="addProject(event)">
                 <div>
                     <label for="inputProject">Project Name</label>
@@ -67,7 +74,7 @@
 
                 <div>
                     <label>Technologies</label>
-                    <div>
+                    <div class="iconCheckBox">
                         <div class="checkboxForm">
                             <input type="checkbox" id="javaScript" value="javaScript">
                             <label for="javaScript">JavaScript</label>
@@ -76,7 +83,7 @@
                         </div>
                         <div class="checkboxForm">
                             <input type="checkbox" id="linux" value="linux">
-                            <label for="linux">Pentest Tools</label>
+                            <label for="linux">Metasploit</label>
                             <input type="checkbox" id="java" value="java">
                             <label for="java">Java</label>
                         </div>
@@ -101,7 +108,7 @@
         </div>
 
         <div class="container-blog">
-            <h1>MY PROJECT</h1>
+            <h1>THE PROJECT</h1>
             <div class="container-grid" id="contents">
                 <div class="item-grid">
                     <img src="img/nahloh.jpeg">

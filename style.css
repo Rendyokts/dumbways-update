@@ -52,6 +52,11 @@ nav ul li .active {
     cursor: pointer;
 }
 
+.nav-left ul li a img:hover{
+    transform: scale(1.1);
+    transition: ease-in-out;
+}
+
 .nav-right {
     flex: 50%;
     text-align: end;
@@ -212,8 +217,9 @@ a {
 }
 
 .card:hover {
-    transform: scale(1.2);
-    transition: .3s ease-in-out;
+    transform: scale(1.1);
+    transition: ease-in-out;
+    
 }
 
 .indexSection {
@@ -238,7 +244,7 @@ a {
 }
 
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 768px) {
     .indexSection {
         width: 90%; 
         flex-direction: column;
@@ -258,6 +264,10 @@ a {
         flex: 1;
     }
 
+    .container-left p,h1{
+        text-align: center;
+    }
+
     .container-right img {
         width: 13em;
         height: 14em;
@@ -266,6 +276,16 @@ a {
 
     .sosmed{
         text-align: center;
+    }
+
+    /* .contactform{
+        width: 85%;
+    } */
+
+    .contactform { 
+        margin: 1em auto;
+        width: 40%;
+        padding-bottom: 3em;
     }
 
 }
@@ -279,11 +299,25 @@ a {
         display: block; 
     }
 
-    .contactform {
+    /* .contactform {
         width: 85%;
+    } */
+
+    .contactform { 
+        margin: 1em auto;
+        width: 40%;
+        padding-bottom: 3em;
     }
 
     .sosmed{
         text-align: center;
+    }
+
+    .contact{
+        margin: 30px 30px;
+        display: flex;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
     }
 }

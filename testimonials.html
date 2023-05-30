@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>RENDY OKTAVIAN</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="testimonials.css">
+        <link rel="icon" href="img/anonym2.png">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="img/anonym2.png" />
+                        </a>
+                    </li>
+                    <li class="item-collapse">
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li class="item-collapse">
+                        <a href="myProject.html">PROJECT</a>
+                    </li>
+                    <li class="item-collapse">
+                        <a  class="active" href="testimonials.html">TESTIMONI</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right item-collapse">
+                <a href="contact.html">CONTACT ME</a>
+            </div>
+            <button type="button" class="barsmenu" onclick="openHam()">
+                <i class="ri-menu-5-line ri-2x"></i>
+            </button>
+        </nav>
+        
+        <div class="hamburger-container" id="hamburger-container">
+            <a href="index.html">HOME</a>
+            <a href="myProject.html">PROJECT</a>
+            <a href="testimonials.html" class="hamburger-active">TESTIMONI</a>
+            <div class="hamburger-contact">
+                <a href="contact.html">CONTACT ME</a>
+            </div>
+        </div>
+
+        <h1 style="text-align: center;">TASTY-MONEY</h1>
+
+        <div class="container-rating">
+            <button onclick="allTesti()">ALL</button>
+            <button onclick="filterTesti(1)">1 <i class="fa-solid fa-fire"></i></button>
+            <button onclick="filterTesti(2)">2 <i class="fa-solid fa-fire"></i> </button>
+            <button onclick="filterTesti(3)">3 <i class="fa-solid fa-fire"></i> </button>
+            <button onclick="filterTesti(4)">4 <i class="fa-solid fa-fire"></i> </button>
+            <button onclick="filterTesti(5)">5 <i class="fa-solid fa-fire"></i> </button>
+        </div>
+
+        <div class="container-testi" id="container-testi">
+            <div class="testi-item">
+                <img class="testi-img" src="img/bolehhh.jpg" alt="">
+                <p class="quote">lorem</p>
+                <p class="author">-lorem</p>
+                <p class="rating">4 <i class="fa-solid fa-fire"></i></p>
+            </div>
+
+            <div class="testi-item">
+                <img class="testi-img" src="img/ajaajaada.jpg" alt="">
+                <p class="quote">-lorem</p>
+                <p class="author">lorem</p>
+            </div>
+
+            <div class="testi-item">
+                <img class="testi-img" src="img/panjang2orangbaik.jpg" alt="">
+                <p class="quote">-lorem</p>
+                <p class="author">lorem</p>
+            </div>
+
+            <div class="testi-item">
+                <img class="testi-img" src="img/yaudahh.jpg" alt="">
+                <p class="quote">-lorem</p>
+                <p class="author">lorem</p>
+            </div>
+
+            <div class="testi-item">
+                <img class="testi-img" src="img/yaudahh.jpg" alt="">
+                <p class="quote">-lorem</p>
+                <p class="author">lorem</p>
+            </div>
+        </div>
+        
+        <script src="index.js"></script>
+        <script src="testimonials.js"></script>
+</body>
+</html>

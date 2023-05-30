@@ -67,7 +67,7 @@ h1{
     font-size: 18;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
     .container-detail {
         display: block;
     }
