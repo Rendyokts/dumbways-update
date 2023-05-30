@@ -245,6 +245,14 @@ a {
 
 
 @media only screen and (max-width: 768px) {
+    .item-collapse {
+        display: none;
+    }
+
+    .barsmenu {
+        display: block; 
+    }
+
     .indexSection {
         width: 90%; 
         flex-direction: column;
@@ -278,10 +286,6 @@ a {
         text-align: center;
     }
 
-    /* .contactform{
-        width: 85%;
-    } */
-
     .contactform { 
         margin: 1em auto;
         width: 40%;
@@ -298,10 +302,6 @@ a {
     .barsmenu {
         display: block; 
     }
-
-    /* .contactform {
-        width: 85%;
-    } */
 
     .contactform { 
         margin: 1em auto;
