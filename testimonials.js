@@ -13,7 +13,7 @@ const testimonialData = [
     },
     {
         author : "A Arkan",
-        quotes : '"Oh ya belum tentu"',
+        quotes : '"Jumatan Pak Bagas?"',
         image  : "img/panjang2orangbaik.jpg",
         rating : 3,
     },
