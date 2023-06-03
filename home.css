@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(img/back-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-form{
+    display: flex;
+    margin: 5% auto;
+    border-radius: 7px;
+    background-color: #ffff;
+    box-shadow: 0 0 15px#565656;
+    justify-content: center;
+    opacity: 1;
+}
+
+.nav-link:hover{
+    color: salmon !important;
+}
+
+.text-salmon{
+    color: salmon !important;
+}
+
+.bg-black:hover{
+    background-color: salmon !important;
+    transition: .2s;
+}
+
+.container-form .container{
+    margin: 30px 0;
+    width: 90%;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.8rem !important;
+}
+
+.contact2 .btn {
+    border-radius: 8px !important;
+}
+
+.contact2 .text-black{
+    color: black !important;
+}
+
+.contact2 .text-black:hover{
+    color: salmon !important;
+}
+
+.container-right{
+    flex: 1;
+}
+
+.card{
+    box-shadow: 0 0 15px #565656;
+    /* width: fit-content !important; */
+    border-radius: 10px !important;
+    width: 20em !important;
+    line-height: 0.3em !important;
+}
+
+.card img{
+    /* width: 30em !important; */
+    height: 23em !important;
+    object-fit: cover !important;
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.sosmed i{
+    color: black !important;
+}
+
+.sosmed i:hover{
+    color: salmon !important;
+}
