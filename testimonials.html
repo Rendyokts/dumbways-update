@@ -3,9 +3,14 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>RENDY OKTAVIAN</title>
-        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="style.css"> -->
         <link rel="stylesheet" href="testimonials.css">
         <link rel="icon" href="img/anonym2.png">
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+            crossorigin="anonymous">
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,7 +20,7 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css">
     </head>
     <body>
-        <nav>
+        <!-- <nav>
             <div class="nav-left">
                 <ul>
                     <li>
@@ -49,10 +54,49 @@
             <div class="hamburger-contact">
                 <a href="contact.html">CONTACT ME</a>
             </div>
-        </div>
+        </div> -->
 
-        <h1 style="text-align: center;">TASTY-MONEY</h1>
-        <h3 style="text-align: center;">Rating by FIRE</h3>
+        <!-- navbar-bootstrap5 -->
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid text-center d-flex mx-5">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/anonym2.png" />
+                </a>
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" 
+                    aria-expanded="false" 
+                    aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav" >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link fw-bold">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="myProject.html" class="nav-link fw-bold">PROJECT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="testimonials.html" class="nav-link active text-salmon fw-bolder"  aria-current="page">TASTY-MONEY</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-link">
+                            <a href="contact.html" class="btn bg-black text-white px-2">CONTACT ME</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar-bootstrap5 -->
+
+        <h1 class="text-center fw-bold mt-5">TASTY-MONEY</h1>
+        <h3 class="text-center">Rating by FIRE</h3>
 
         <div class="container-rating">
             <button onclick="allTesti()">ALL</button>
@@ -98,5 +142,10 @@
         
         <script src="index.js"></script>
         <script src="ajax.js"></script>
+        <script 
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+            crossorigin="anonymous">
+        </script>
 </body>
 </html>

@@ -173,7 +173,7 @@ textarea {
     bottom: 0;
     margin-top: 0.51em;
     display: flex;
-    justify-content: start;
+    justify-content: center;
 }
 
 .itemBtn button{

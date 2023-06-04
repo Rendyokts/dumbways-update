@@ -2,19 +2,26 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>RENDY OKTAVIAN</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="myProject.css">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <!-- <link rel="stylesheet" href="home.css"> -->
+        <link rel="stylesheet" href="addProject.css">
         <link rel="icon" href="img/anonym2.png">
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+            crossorigin="anonymous">
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
             integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"/>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css">
+        <link 
+            rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css">
     </head>
-    <body>
-        <nav>
+        <!-- <nav>
             <div class="nav-left">
                 <ul>
                     <li>
@@ -48,9 +55,48 @@
             <div class="hamburger-contact">
                 <a href="contact.html">CONTACT ME</a>
             </div>
-        </div>
+        </div> -->
 
-        <div class="projectform">
+        <!-- navbar-bootstrap5 -->
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid text-center d-flex mx-5">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/anonym2.png" />
+                </a>
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" 
+                    aria-expanded="false" 
+                    aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav" >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link fw-bold">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="myProject.html" class="nav-link active text-salmon fw-bolder" aria-current="page">PROJECT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="testimonials.html" class="nav-link fw-bold">TASTY-MONEY</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-link">
+                            <a href="contact.html" class="btn bg-black text-white px-2">CONTACT ME</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar-bootstrap5 -->
+
+        <!-- <div class="projectform">
             <h1>ADD A PROJECT</h1>
             <form action="" onsubmit="addProject(event)">
                 <div>
@@ -105,9 +151,75 @@
                 </div>
                 <button type="submit" class="button-submit" onclick="formAlert()">Submit</button>
             </form>
+        </div> -->
+
+        <div class="row">
+            <div class="col-md fs-5">
+                <form action="" onsubmit="addProject(event)">
+                    <h1 class="text-center fw-bolder mt-5">ADD PROJECT</h1>
+                    <div class="mb-3">
+                        <label for="inputProject" class="form-label">Project Name</label>
+                        <input type="text" class="form-control" id="inputProject">
+                    </div>
+                    
+                    <div class="dateForm row mb-3">
+                        <div class="dateInput1 col-6">
+                            <label for="date1" class="form-label">Start Date</label>
+                            <input type="date" id="startdate" class="form-control">
+                        </div>
+                        <div class="dateInput2 col-6">
+                            <label for="date2" class="form-label" >End Date</label>
+                            <input type="date" id="enddate" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="desc" class="form-label">Description</label>
+                        <textarea name="desc" id="desc" cols="10" rows="5" class="form-control"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="tech" class="form-label">Technologies</label>
+                        <div class="iconCheckBox row">
+                            <div class="checkboxForm form-check col-6">
+                                <input type="checkbox" id="javaScript" value="javaScript" class="form-check-input">
+                                <label for="javaScript" class="form-check-label">JavaScript</label>
+                            </div>
+                            <div class="checkboxForm form-check col-6">
+                                <input type="checkbox" id="python" value="python" class="form-check-input">
+                                <label for="python" class="form-check-label">Python</label>
+                            </div>
+                        </div>
+                        <div class="iconCheckBox row mt-3">
+                            <div class="checkboxForm form-check col-6">
+                                <input type="checkbox" id="linux" value="linux" class="form-check-input">
+                                <label for="linux" class="form-check-label">Metasploit</label>
+                            </div>
+                            <div class="checkboxForm form-check col-6">
+                                <input type="checkbox" id="java" value="java" class="form-check-input">
+                                <label for="java" class="form-check-label">Java</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="mb-2">Upload Image</label>
+                            <div class="inputBlogImageGroup">
+                                <label for="inputImg">
+                            <div class="attachImg mb-3" id="attachImg">
+                                    <input type="file" id="inputImg" class="form-control">
+                                    <label for="inputImg" class="form-label"></label>
+                            </div>
+                                </label>
+                            </div>
+                        <div class="text-end mt-3">
+                            <button class="btn bg-black text-white" onclick="formAlert()">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
 
-        <div class="container-blog">
+        <!-- <div class="container-blog">
             <h1>THE PROJECT</h1>
             <div class="container-grid" id="contents">
                 <div class="item-grid">
@@ -241,10 +353,15 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
 
         <script src="myProject.js"></script>
         <script src="index.js"></script>
+        <script 
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+            crossorigin="anonymous">
+        </script>
 
     </body>
 </html>

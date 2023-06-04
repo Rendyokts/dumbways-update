@@ -1,3 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(img/back-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-link:hover{
+    color: salmon !important;
+}
+
+.btn:hover{
+    background-color: salmon !important;
+}
+
+
 .container-rating {
     margin: 1em auto;
     width: fit-content;
@@ -70,7 +94,6 @@
 
     .container-testi {
         display: block;
-        /* margin: 5.5em; */
     }
 
     .testi-img {

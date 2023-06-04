@@ -13,7 +13,40 @@ body {
     background-size: cover;
 }
 
-.container-form{
+.container{
+    border-radius: 8px !important;
+}
+
+.nav-link:hover{
+    color: salmon !important;
+}
+
+.btn:hover{
+    background-color: salmon !important;
+}
+
+.icon:hover{
+    color: salmon !important;
+}
+
+.icon-group .fa-brands{
+    font-size: 2em !important;
+}
+
+.card-group:hover{
+    transition: ease-in-out;
+    transform: scale(1.1);
+}
+
+.previewTech .text-black:hover{
+    color: salmon !important;
+}
+
+.item-grid h2:hover{
+    color: salmon !important;
+}
+
+/* .container-form{
     display: flex;
     margin: 5% auto;
     border-radius: 7px;
@@ -62,14 +95,14 @@ body {
 
 .card{
     box-shadow: 0 0 15px #565656;
-    /* width: fit-content !important; */
+    width: fit-content !important;
     border-radius: 10px !important;
     width: 20em !important;
     line-height: 0.3em !important;
 }
 
 .card img{
-    /* width: 30em !important; */
+    width: 30em !important;
     height: 23em !important;
     object-fit: cover !important;
     border-radius: 10px 10px 0 0 !important;
@@ -81,4 +114,4 @@ body {
 
 .sosmed i:hover{
     color: salmon !important;
-}
+} */

@@ -93,8 +93,8 @@ function pushProject() {
         
         <div class="item-grid">
             <img src="${dataProject[i].images}">
-            <h3 style="cursor:pointer">${dataProject[i].projectName}</h3>
-            <h5>Duration: ${dataProject[i].difference} </h5>
+            <h2 style="cursor:pointer">${dataProject[i].projectName}</h2>
+            <h6>Duration: ${dataProject[i].difference} </h6>
                 <div class="previewInfo">
                 <p>${dataProject[i].desc}</p>
                 <div class="previewTech">
