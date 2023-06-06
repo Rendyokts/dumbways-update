@@ -38,11 +38,13 @@ async function allTesti(){
 
     let testimonialHTML = "";
     response.forEach(function(item){
-        testimonialHTML += `<div class="testi-item" > 
-                                <img class="testi-img" src="${item.image}">  
-                                <p class="quote"> ${item.quotes}</p> 
-                                <p class="author"> - ${item.author}</p> 
-                                <p class="rating"> ${fireMaker(item.rating)}</i></p>
+        testimonialHTML += `<div class="col-6 col-md-3" >
+                                <div class="card p-3 border-0 shadow">
+                                    <img src="${item.image}">  
+                                    <p class="mt-3"> ${item.quotes}</p> 
+                                    <p class="text-end"> - ${item.author}</p> 
+                                    <p class="text-end"> ${fireMaker(item.rating)}</i></p>
+                                </div>
                             </div>`;
     });
 
@@ -61,14 +63,16 @@ async function filterTesti(rating) {
     let testimonialHTML = "";
 
     if (testiFiltered.length === 0) {
-        testimonialHTML += '<h2>404 Data Not Found</h2>';
+        testimonialHTML += '<h2 class="text-center text-white">404 Data Not Found</h2>';
     } else {
         testiFiltered.forEach((item) => {
-            testimonialHTML += `<div class="testi-item" > 
-                                    <img class="testi-img" src="${item.image}">  
-                                    <p class="quote"> ${item.quotes}</p> 
-                                    <p class="author"> - ${item.author}</p> 
-                                    <p class="rating"> ${fireMaker(item.rating)}</i></p>
+            testimonialHTML += `<div class="col-6 col-md-3" >
+                                    <div class="card p-3 border-0 shadow">
+                                        <img src="${item.image}">  
+                                        <p class="mt-3"> ${item.quotes}</p> 
+                                        <p class="text-end"> - ${item.author}</p> 
+                                        <p class="text-end"> ${fireMaker(item.rating)}</i></p>
+                                    </div>
                                 </div>`;
         });
     };

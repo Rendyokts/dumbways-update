@@ -2,57 +2,15 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>RENDY OKTAVIAN</title>
-        <!-- <link rel="stylesheet" href="style.css"> -->
-        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="style.css">
         <link 
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
             rel="stylesheet" 
             integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
             crossorigin="anonymous">
         <link rel="icon" href="img/anonym2.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css">
     </head>
-
     <body>
-    <!-- <nav>
-        <div class="nav-left">
-            <ul>
-                <li>
-                    <a href="index.html">
-                        <img src="img/anonym2.png" />
-                    </a>
-                </li>
-                <li class="item-collapse">
-                    <a href="index.html">HOME</a>
-                </li>
-                <li class="item-collapse">
-                    <a href="myProject.html">PROJECT</a>
-                </li>
-                <li class="item-collapse">
-                    <a href="testimonials.html">TESTIMONI</a>
-                </li>
-            </ul>
-        </div>
-        <div class="nav-right item-collapse">
-            <a href="contact.html">CONTACT ME</a>
-        </div>
-        <button type="button" class="barsmenu" onclick="openHam()">
-            <i class="ri-menu-5-line ri-2x"></i>
-        </button>
-    </nav>
-    
-    <div class="hamburger-container" id="hamburger-container">
-        <a href="index.html">HOME</a>
-        <a href="myProject.html">PROJECT</a>
-        <a href="testimonials.html">TESTIMONI</a>
-        <div class="hamburger-contact">
-            <a href="contact.html">CONTACT ME</a>
-        </div>
-    </div> -->
-
     <!-- navbar-bootstrap5 -->
     <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid text-center d-flex mx-5">
@@ -73,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarNav" >
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link fw-bold">HOME</a>
+                        <a href="index.html" class="nav-link active text-salmon fw-bolder" aria-current="page">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a href="myProject.html" class="nav-link fw-bold">PROJECT</a>
@@ -84,7 +42,7 @@
                 </ul>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-link">
-                        <a href="contact.html" class="btn bg-black text-white px-2">CONTACT ME</a>
+                        <a href="contact.html" class="contact-btn btn bg-black text-white px-2">CONTACT ME</a>
                     </li>
                 </ul>
             </div>
@@ -92,70 +50,37 @@
     </nav>
     <!-- navbar-bootstrap5 -->
     
-    <!-- <div class="contact-form">
-        <h1 class="title text-center fw-bold mt-5 mb-3">HIT ME UP</h1>
-            <form action="" style="width: 600px; align-items: center;">
-                <div class="">
-                    <label for="Name-input" class="form-label">Name</label>
-                    <input id="Name-input" class="input-group form-control" type="text">
-                </div>
-
-                <div>
-                    <label for="Email-input" class="form-label">Email</label>
-                    <input id="Email-input" type="email" class="input-group form-control">
-                </div>
-
-                <div>
-                    <label for="Phone-input">Phone Number</label>
-                    <input id="Phone-input" type="number" class="input-group form-control">
-                </div>
-
-                <div>
-                    <label for="subject-input">Subjet</label>
-                    <select name="" id="subject-input">
-                        <option value="" hidden>Select</option>
-                        <option value="" >Cyber Security</option>
-                        <option value="" >Web Development</option>
-                        <option value="" >Consultant</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="input-message">Your Message</label>
-                    <textarea name="" id="input-message" cols="10" rows="5"></textarea>
-                </div>
-                <button class="btn button-submit mt-4 bg-black text-white" onclick="submitData()">Submit</button>
-            </form>
-    </div> -->
-    <div class="contactform">
-        <h1 class="title fw-bolder mt-5">HIT ME UP</h1>
-        <form>
-            <div>
-                <label for="Name-input" class="form-label">Name</label>
-                <input id="Name-input" class="form-control" type="text" required placeholder="Enter Your Name">
+    <h1 class="title fw-bolder mt-5 mb-3 text-center text-white">HIT ME UP</h1>
+    <div class="form-size">
+        <form class="px-4">
+            <div class="form-floating mb-3 shadow">
+                <input id="Name-input" class="form-control" type="text" required placeholder="empty">
+                <label for="Name-input" class="form-label">Give me a Name</label>
+            </div>
+            <div class="form-floating mb-3 shadow">
+                <input id="Email-input" class="form-control shadow" type="email" name="email" required placeholder="empty">
+                <label for="Email-input" class="form-label">add Your E-mail</label>
+            </div>
+            <div class="form-floating mb-3 shadow">
+                <input id="Phone-input" class="form-control" type="number" required placeholder="empty">
+                <label for="Phone-input" class="form-label">and Your Phone Number</label>
             </div>
             <div>
-                <label for="Email-input" class="form-label">Email</label>
-                <input id="Email-input" class="form-control" type="email" name="email" required placeholder="Enter Your Email">
-            </div>
-            <div>
-                <label for="Phone-input" class="form-label">Phone Number</label>
-                <input id="Phone-input" class="form-control" type="number" required placeholder="Enter Your Phone Number">
-            </div>
-            <div>
-                <label for="subject-input">Subject</label>
-                <select id="subject-input" required>
-                    <option value="" hidden >Select</option>
-                    <option>Cyber Security</option>
-                    <option>Web Development</option>
-                    <option>Consultant</option> 
+                <select id="subject-input" class="form-select mb-3 shadow" required>
+                    <option selected value="" hidden>Select</option>
+                    <option value="CyberSecurity">Cyber Security</option>
+                    <option value="WebDevelopment">Web Development</option>
+                    <option value="Consultant">Consultant</option> 
                 </select>
             </div>
-            <div>
-                <label for="input-message">Your Messages</label>
-                <textarea id="input-message" rows="5" cols="10" required minlength="20" placeholder="Enter Your Messages"></textarea>
+            <div class="form-floating shadow">
+                <textarea id="input-message" class="form-control" cols="40" style="height:14rem; resize: none;"  required minlength="20" placeholder="empty"></textarea>
+                <label for="input-message" class="form-label">What are You thinking?</label>
+            </div>
+            <div class="my-4 text-end">
+                <button class="button-submit btn btn-light text-black rounded-3" onclick="submitData()">Submit</button>
             </div>
         </form>
-            <button class="button-submit" onclick="submitData()">Submit</button>
     </div>
     <script src="contact.js"></script>
     <script src="index.js"></script> 
