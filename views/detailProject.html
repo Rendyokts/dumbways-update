@@ -2,9 +2,13 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>RENDY OKTAVIAN</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="detailProject.css">
-        <link rel="icon" href="img/anonym2.png">
+        <link rel="stylesheet" href="/public/style.css">
+        <link rel="icon" href="/public/img/anonym2.png">
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+            crossorigin="anonymous">
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -14,51 +18,52 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css">
     </head>
     <body>
-        <nav>
-            <div class="nav-left">
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            <img src="img/anonym2.png" />
-                        </a>
-                    </li>
+        <!-- navbar-bootstrap5 -->
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid text-center d-flex mx-5">
+                <a class="navbar-brand" href="/">
+                    <img src="/public/img/anonym2.png" />
+                </a>
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" 
+                    aria-expanded="false" 
+                    aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <li class="item-collapse">
-                        <a class="active" href="index.html">HOME</a>
-                    </li>
-
-                    <li class="item-collapse">
-                        <a href="myProject.html">PROJECT</a>
-                    </li>
-                    <li class="item-collapse">
-                        <a href="testimonials.html">TESTIMONI</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarNav" >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+                        <li class="nav-item">
+                            <a href="/" class="nav-link active text-salmon fw-bolder" aria-current="page">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="myProject" class="nav-link fw-bold">PROJECT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="testimonials" class="nav-link fw-bold">TASTY-MONEY</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-link">
+                            <a href="contact" class="contact-btn btn bg-black text-white px-2">CONTACT ME</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="nav-right item-collapse">
-                <a href="contact.html">CONTACT ME</a>
-            </div>
-            <button type="button" class="barsmenu" onclick="openHam()">
-                <i class="ri-menu-5-line ri-2x"></i>
-            </button>
         </nav>
-        
-        <div class="hamburger-container" id="hamburger-container">
-            <a href="index.html">HOME</a>
-            <a href="myProject.html"  class="hamburger-active">PROJECT</a>
-            <a href="testimonials.html">TESTIMONI</a>
-            <div class="hamburger-contact">
-                <a href="contact.html">CONTACT ME</a>
-            </div>
-        </div>
+        <!-- navbar-bootstrap5 -->
 
         <div class="container1">
             <section>
                 <div class="main-detail">
-                    <h1>Cyber Security</h1>
+                    <h1 class="text-white">Cyber Security</h1>
                     <div class="container-detail">
                         <div class="detail-left">
-                            <img src="img/cyber-sec.jpg">
+                            <img src="/public/img/cyber-sec.jpg">
                         </div>
                         <div class="detail-right">
                             <div class="right1">
@@ -115,6 +120,6 @@
             </section>
 
         </div>
-        <script src="index.js"></script>
+        <script src="/public/index.js"></script>
     </body>
 </html>

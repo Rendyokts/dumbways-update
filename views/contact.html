@@ -2,20 +2,20 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>RENDY OKTAVIAN</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="public/style.css">
         <link 
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
             rel="stylesheet" 
             integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
             crossorigin="anonymous">
-        <link rel="icon" href="img/anonym2.png">
+        <link rel="icon" href="/public/img/anonym2.png">
     </head>
     <body>
     <!-- navbar-bootstrap5 -->
     <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid text-center d-flex mx-5">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/anonym2.png" />
+            <a class="navbar-brand" href="/">
+                <img src="/public/img/anonym2.png" />
             </a>
             <button 
                 class="navbar-toggler" 
@@ -31,18 +31,18 @@
             <div class="collapse navbar-collapse" id="navbarNav" >
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link active text-salmon fw-bolder" aria-current="page">HOME</a>
+                        <a href="/" class="nav-link fw-bold" aria-current="page">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a href="myProject.html" class="nav-link fw-bold">PROJECT</a>
+                        <a href="myProject" class="nav-link fw-bold">PROJECT</a>
                     </li>
                     <li class="nav-item">
-                        <a href="testimonials.html" class="nav-link fw-bold">TASTY-MONEY</a>
+                        <a href="testimonials" class="nav-link fw-bold">TASTY-MONEY</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-link">
-                        <a href="contact.html" class="contact-btn btn bg-black text-white px-2">CONTACT ME</a>
+                        <a href="contact" class="contact-btn btn bg-black text-white px-2">CONTACT ME</a>
                     </li>
                 </ul>
             </div>
@@ -55,11 +55,11 @@
         <form class="px-4">
             <div class="form-floating mb-3 shadow">
                 <input id="Name-input" class="form-control" type="text" required placeholder="empty">
-                <label for="Name-input" class="form-label">Give me a Name</label>
+                <label for="Name-input" class="form-label">Give Me a Name</label>
             </div>
             <div class="form-floating mb-3 shadow">
                 <input id="Email-input" class="form-control shadow" type="email" name="email" required placeholder="empty">
-                <label for="Email-input" class="form-label">add Your E-mail</label>
+                <label for="Email-input" class="form-label">Add Your E-mail</label>
             </div>
             <div class="form-floating mb-3 shadow">
                 <input id="Phone-input" class="form-control" type="number" required placeholder="empty">
@@ -67,7 +67,7 @@
             </div>
             <div>
                 <select id="subject-input" class="form-select mb-3 shadow" required>
-                    <option selected value="" hidden>Select</option>
+                    <option selected value="" hidden>Tell Me What You Need !</option>
                     <option value="CyberSecurity">Cyber Security</option>
                     <option value="WebDevelopment">Web Development</option>
                     <option value="Consultant">Consultant</option> 
@@ -75,15 +75,15 @@
             </div>
             <div class="form-floating shadow">
                 <textarea id="input-message" class="form-control" cols="40" style="height:14rem; resize: none;"  required minlength="20" placeholder="empty"></textarea>
-                <label for="input-message" class="form-label">What are You thinking?</label>
+                <label for="input-message" class="form-label">What do You Wanna Talk About?</label>
             </div>
             <div class="my-4 text-end">
                 <button class="button-submit btn btn-light text-black rounded-3" onclick="submitData()">Submit</button>
             </div>
         </form>
     </div>
-    <script src="contact.js"></script>
-    <script src="index.js"></script> 
+    <script src="public/contact.js"></script>
+    <!-- <script src="index.js"></script>  -->
     <script 
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
